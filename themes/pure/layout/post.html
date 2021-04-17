@@ -70,15 +70,18 @@
           {{/if}}
           {{each(options.post.tags)}}
       <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--{{@this.color}}">
-            <a href="tag/{{@this.value}}.html">{{@this.value}}</a>
-          </span>
-          {{/each}}
-        </div>
+          <a href="tag/{{@this.value}}.html">{{@this.value}}</a>
+      </span>
+      {{/each}}
+    </div>
+    <div class="Article__Desc">
+        {{post.description}}
+    </div>
         {{/if}}
   </header>
       {{post.contentHTML}}
   <footer class="Footer">
-        <div>&copy; {{siteMeta.title}} 2021</div>
+        <div>&copy; {{siteMeta.title}} &centerdot; 2021</div>
         <div>&centerdot;</div>
         <div>Powered by <a href="https://github.com/dragonman225/notablog" target="_blank"
             rel="noopener noreferrer">Notablog</a>.
